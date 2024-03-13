@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products</title>
+    <link href="
+https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Responsive navbar -->
+    <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10 cursor-pointer">
+        <h1 class="text-2xl">GREENDEN</h1>
+
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-6 h-6 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+
+        <ul class="flex gap-5 text-gray-600 hidden md:flex">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="#">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Responsive section ends -->
+
+    <!-- Sidenavbar section -->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="height:100vh; width:50%; right:-50%;">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 items-center text-gray-600">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="#">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </section>
+    <!-- Sidenavbar section ends -->
+
+    <!-- heading section -->
+    <section class="text-center m-5">
+        <h1 class="font-bold text-3xl" >Our Products</h1>
+        <input id="search" type="text" class="border border-black p-2 m-3"  placeholder="Search for a Product..." style="width: 80%"><br>
+    </section>
+    <!-- Heading section ends -->
+    <!-- Grid image section -->
+    <section class="p-4 text-center">
+        <!-- Grid container -->
+        <div id="productcontainer" class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+            <div class="text-center">
+                <img src="./images/grid-1.png" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="">
+                <h1>Aglaonema plant</h1>
+                <p>$20</p>
+            </div>
+            <div class="text-center">
+                <img src="./images/grid-2.png" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="">
+                <h1>Cyclamen palnt</h1>
+                <p>$15</p>
+            </div>
+            <div class="text-center">
+                <img src="./images/grid-3.png" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="">
+                <h1>Ficus Lyrata</h1>
+                <p>$25</p>
+            </div>
+            <div class="text-center">
+                <img src="./images/grid-4.png" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="">
+                <h1>Orchid plant</h1>
+                <p>$35</p>
+            </div>
+            <div class="text-center">
+                <img src="./images/grid-5.png" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="">
+                <h1>Boston Fern</h1>
+                <p>$25</p>
+            </div>
+            <div class="text-center">
+                <img src="./images/grid-6.png" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="">
+                <h1>Daisy plant</h1>
+                <p>$15</p>
+            </div>
+            <div class="text-center">
+                <img src="./images/grid-7.png" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="">
+                <h1>Monstera plant</h1>
+                <p>$20</p>
+            </div>
+            <div class="text-center">
+                <img src="./images/grid-8.png" class="inline hover:shadow-xl transform hover:-translate-y-2"
+                    alt="">
+                <h1>Lavender plant</h1>
+                <p>$30</p>
+            </div>
+        </div>
+    </section>
+    <!-- Grid image section ends -->
+    <!-- Footer section -->
+    <section class="bg-green-100 p-10 flex flex-col gap-5">
+        <h1 class="text-4xl font-bold">Greenden</h1>
+        <p>The standard chunk of lorem used since 1500 is repodused below from the interest</p>
+        <p>@2021 Greendey.com</p>
+</section>
+<!-- Footer secton ends -->
+<script src="product.js"></script>
+</body>
+</html>
